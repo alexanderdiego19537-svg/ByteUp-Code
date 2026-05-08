@@ -1,0 +1,33 @@
+# ByteUP Code — Preview Visual 🎨
+
+## Splash Screen
+![Splash Screen de ByteUP Code con partículas flotantes, logo </> con glow verde y barra de carga](C:/Users/mackm/.gemini/antigravity/brain/5f43448b-309b-4bff-ad89-779637f96097/splash_preview.png)
+
+✅ **Partículas flotantes** verdes en el fondo oscuro  
+✅ **Logo `</>`** con glow cian/verde pulsante y borde circular  
+✅ **"ByteUP Code"** en gradiente verde → cian  
+✅ **Subtítulo** "Aprende a programar jugando" con letter-spacing elegante  
+✅ **Barra de carga** animada verde neón  
+✅ Auto-navega al Home después de 3 segundos  
+
+---
+
+## Home Screen
+![Home Screen con stats, card de rango glassmorphism, grid de lenguajes y navbar flotante](C:/Users/mackm/.gemini/antigravity/brain/5f43448b-309b-4bff-ad89-779637f96097/home_preview.png)
+
+✅ **Top bar**: Logo `</>` + "ByteUP Code" + chips de 🔥7, ❤️4, ⚡1250  
+✅ **Saludo**: "¡Hola, Dev! 👋" con gradiente  
+✅ **Card de Rango**: Glassmorphism con medalla 🥉, progreso 45%, badge "1250 XP" verde→cian  
+✅ **Barra de progreso** con gradiente + glow  
+✅ **Grid de lenguajes**: Python 🐍 (azul), JavaScript ⚡ (dorado) visibles — Java y C++ abajo con scroll  
+✅ **Navbar flotante** con bordes redondeados y sombra  
+
+> [!NOTE]
+> La app se scrollea para ver Java ☕, C++ ⚙️ y el card de "Desafío del Día" 🎯
+
+## Estado del proyecto
+| Mensaje | Estado |
+|---------|--------|
+| M1 Estructura | ✅ |
+| M2 Fon Master | ✅ |
+| M3-M14 | 🔜 Pendientes |

@@ -1,0 +1,26 @@
+# Este archivo configura el analizador, que revisa estáticamente tu código Dart
+# en busca de errores, advertencias y sugerencias de mejora.
+# Es como el ojo de halcón de Fon Master revisando tu sintaxis. ✨
+#
+# Los problemas identificados por el analizador aparecen en la interfaz de tu IDE.
+# También puedes invocarlo desde la terminal con `flutter analyze`.
+
+# La siguiente línea activa un conjunto de reglas recomendadas para Flutter.
+# Estas reglas te ayudan a escribir un código más robusto y profesional.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # Las reglas de linter aplicadas a este proyecto se pueden personalizar aquí.
+  # Puedes desactivar reglas incluidas en `package:flutter_lints/flutter.yaml`
+  # o añadir reglas adicionales. 
+  # Tienes la lista completa aquí: https://dart.dev/lints
+  #
+  # En lugar de desactivar una regla para todo el proyecto, también puedes
+  # silenciarla para una sola línea usando `// ignore: nombre_de_la_regla`
+  # o para todo un archivo con `// ignore_for_file: nombre_de_la_regla`.
+  rules:
+    # avoid_print: false  # Quita el comentario si quieres usar print() sin quejas.
+    # prefer_single_quotes: true  # Actívalo si prefieres las comillas simples ' '.
+
+# Para más información sobre este archivo, visita:
+# https://dart.dev/guides/language/analysis-options

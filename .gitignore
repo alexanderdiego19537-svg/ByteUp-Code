@@ -1,0 +1,44 @@
+# ─── Archivos varios que no necesitamos en el cofre (Git) ────────────────
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ─── Cosas de IntelliJ ───────────────────────────────────────────────
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# La carpeta .vscode contiene tus configuraciones de editor. 
+# Si quieres compartirlas con el equipo, deja esta línea comentada.
+#.vscode/
+
+# ─── Relacionado con Flutter/Dart/Pub ─────────────────────────────────
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# ─── Relacionado con Simbolización ────────────────────────────────────
+app.*.symbols
+
+# ─── Relacionado con Ofuscación ──────────────────────────────────────
+app.*.map.json
+
+# ─── Aquí es donde Android Studio guarda los ejecutables ──────────────
+/android/app/debug
+/android/app/profile
+/android/app/release

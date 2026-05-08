@@ -1,0 +1,6 @@
+INSTRUCCIONES: Reemplaza este archivo con un .mp3 corto (2-3 segundos) de fanfare/victoria.
+Puedes buscar en: https://freesound.org (búsqueda: "fanfare short" filtrar CC0)
+Descarga el .mp3, renómbralo a "bienvenida.mp3" y ponlo en esta misma carpeta.
+
+El paquete audioplayers ya está configurado en pubspec.yaml.
+La lógica de reproducción está en splash_screen.dart.

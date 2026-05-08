@@ -1,0 +1,57 @@
+name: byteup_code
+description: "¡Tu camino para ser un Master Elite de la programación!"
+# Esta línea evita que subas este tesoro a pub.dev por accidente. ¡Mantenlo privado!
+publish_to: 'none'
+
+# Aquí definimos la versión de nuestra app. Como el nivel de un personaje:
+# Versión: Mayor.Menor.Parche+Construcción
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+# ¡Nuestros Súper Poderes! (Dependencias)
+# Aquí traemos herramientas externas para que nuestra app haga cosas increíbles.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  shared_preferences: ^2.5.5
+  audioplayers: ^6.0.0
+  crypto: ^3.0.3
+  webview_flutter: ^4.8.0
+
+
+# Herramientas para nosotros, los arquitectos (Dev Dependencies)
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # "flutter_lints" nos ayuda a escribir un código limpio y profesional.
+  # Es como tener a Fon Master revisando tus tareas.
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# El logo de nuestra marca
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+
+# Para saber más sobre este archivo, visita: https://dart.dev/tools/pub/pubspec
+
+# La siguiente sección es específica para paquetes de Flutter.
+flutter:
+
+  # Aquí incluimos los iconos de Material Design para que Fon Master pueda usarlos.
+  uses-material-design: true
+
+  # ¡Nuestros sonidos y efectos especiales!
+  assets:
+    - assets/sounds/
+
+  # Si quieres añadir fuentes personalizadas o imágenes con resoluciones específicas,
+  # este es el lugar. Fon Master recomienda que sean ligeras para que la app vuele.
+  # Para más info sobre fuentes: https://flutter.dev/to/font-from-package

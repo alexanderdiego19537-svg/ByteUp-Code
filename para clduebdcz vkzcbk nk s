@@ -1,0 +1,97 @@
+# ByteUP Code — ¿Qué se ha construido? 🏗️
+
+## Vista actual de la app
+
+````carousel
+![Splash Screen — partículas flotantes, logo con glow neón, texto con gradiente, barra de carga](C:/Users/mackm/.gemini/antigravity/brain/5f43448b-309b-4bff-ad89-779637f96097/splash_preview.png)
+<!-- slide -->
+![Home Screen — stats, card de rango glassmorphism, grid de lenguajes, navbar flotante](C:/Users/mackm/.gemini/antigravity/brain/5f43448b-309b-4bff-ad89-779637f96097/home_preview.png)
+````
+
+---
+
+## 📁 Archivos creados (7 de 14 mensajes completados)
+
+```
+lib/
+├── main.dart ........................ 1,037 líneas ✅ App completa con Splash + Home
+├── data/
+│   └── lessons_data.dart ............ 939 líneas ✅ 36 lecciones, 108 preguntas reales
+├── models/
+│   ├── user_model.dart .............. ~270 líneas ✅ Perfil, XP, rangos, insignias
+│   ├── lesson_model.dart ............ ~130 líneas ✅ Preguntas, tipos ejercicio
+│   └── language_model.dart .......... ~100 líneas ✅ Progreso, desbloqueo
+├── services/
+│   ├── game_service.dart ............ ~240 líneas ✅ Motor de gamificación
+│   ├── ai_service.dart .............. ~200 líneas ✅ Gemini API + offline
+│   └── storage_service.dart ......... ~150 líneas ✅ Persistencia local
+├── widgets/
+│   ├── fon_master_widget.dart ....... ~484 líneas ✅ Mascota con CustomPainter
+│   ├── lesson_card.dart ............. placeholder 🔜
+│   ├── rank_card.dart ............... placeholder 🔜
+│   └── language_card.dart ........... placeholder 🔜
+└── screens/
+    ├── splash_screen.dart ........... placeholder 🔜 (vive en main.dart por ahora)
+    ├── home_screen.dart ............. placeholder 🔜 (vive en main.dart por ahora)
+    ├── learn_screen.dart ............ placeholder 🔜
+    ├── lesson_screen.dart ........... placeholder 🔜
+    ├── profile_screen.dart .......... placeholder 🔜
+    └── auth_screen.dart ............. placeholder 🔜
+```
+
+---
+
+## 🎯 ¿Qué hace cada parte?
+
+### ✅ Pantallas en main.dart (lo que VES)
+
+| Pantalla | Qué hace |
+|----------|----------|
+| **Splash Screen** | Logo `</>` con glow pulsante verde/azul, 25 partículas flotantes, texto "ByteUP Code" con gradiente shader, subtítulo con letter-spacing, barra de carga. Auto-navega al Home en 3s. |
+| **Home Screen** | Barra superior con 🔥racha, ❤️corazones, ⚡XP. Saludo personalizado. Card de rango Bronce con glassmorphism y barra verde→cian. Grid de 4 lenguajes (Python🐍, JavaScript⚡, Java☕, C++⚙️). Card "Desafío del día". Navbar flotante con 4 tabs. |
+
+### ✅ Modelos de datos (la ESTRUCTURA, no se ve)
+
+| Modelo | Qué guarda |
+|--------|------------|
+| **UserModel** | Nombre, email, XP, rango (Bronce→Legend), streak, corazones (5 máx), progreso por lenguaje, insignias ganadas, serialización JSON completa |
+| **LessonModel** | ID, título, descripción, lenguaje, tipo ejercicio, dificultad 1-5, XP, preguntas con 4 opciones y respuesta correcta |
+| **LanguageModel** | Python/JS/Java/C++ con colores, emoji, progreso, lecciones, desbloqueo progresivo |
+
+### ✅ Datos reales (contenido educativo REAL)
+
+| Lenguaje | Lecciones | Preguntas | Temas |
+|----------|-----------|-----------|-------|
+| 🐍 Python | 10 | 30 | Variables, strings, listas, if/else, bucles, funciones, diccionarios, clases, errores, módulos |
+| ⚡ JavaScript | 10 | 30 | var/let/const, tipos, arrays, arrow functions, DOM, eventos, async/await, fetch, clases ES6, localStorage |
+| ☕ Java | 8 | 24 | Sintaxis, variables, condicionales, bucles, métodos, clases, herencia, interfaces |
+| ⚙️ C++ | 8 | 24 | Sintaxis, punteros, arrays, funciones, clases, herencia, STL, memoria dinámica |
+
+### ✅ Servicios (la LÓGICA de fondo)
+
+| Servicio | Qué hace |
+|----------|----------|
+| **GameService** | +10 XP por respuesta correcta, +50 por lección, bonus racha 7d/30d. Rangos automáticos (Bronce→Legend). Corazones (5 máx, -1 por error, regenera 1 cada 4h). 10 insignias verificadas automáticamente. |
+| **AIService** | Conecta con Gemini API de Google. Personalidad de Fon Master como prompt. Historial de 50 mensajes. Respuestas offline inteligentes por palabras clave. |
+| **StorageService** | Guarda todo en el teléfono con SharedPreferences. Usuario, chat, config, API key. Funciona 100% offline. |
+
+### ✅ Fon Master (mascota)
+
+Widget dibujado con CustomPainter: señor gordito de 40 años con lentes semi-oscuros y barba. 4 expresiones (feliz, sorprendido, triste, celebrando con ojos de estrella ⭐). Flota suavemente. Globo de diálogo. Frase insignia: **"¡Exelente!"**
+
+---
+
+## 🔜 Lo que FALTA (Mensajes 8-14)
+
+| # | Qué falta | Para qué sirve |
+|---|-----------|----------------|
+| M8 | **AuthScreen** | Login/registro + modo offline |
+| M9 | **HomeScreen completo** | Conectar todo con datos reales |
+| M10 | **LearnScreen** | Mapa de lecciones estilo Duolingo |
+| M11 | **LessonScreen** | ¡Donde juegas! Preguntas, respuestas, XP |
+| M12 | **ProfileScreen** | Stats, insignias, gráfica de actividad |
+| M13 | **Navegación final** | Conectar pantallas, estado global |
+| M14 | **Pulido final** | Animaciones, Fon Master en todas las pantallas |
+
+> [!IMPORTANT]
+> La app actual muestra datos de ejemplo hardcodeados. En M8-M14 conectamos todo con los modelos y servicios reales para que funcione de verdad.
